@@ -8,7 +8,7 @@ const CustomStyles = createGlobalStyle`
 }
 
 @font-face {
-  font-family: "Baloo Thambi 2" cursive;
+  font-family: "Baloo Thambi 2";
   src: url('/fonts/BalooThami2/Baloo-Thambi-2-Regular.woff') format('woff');
 }
 h1,h2,h3,span{
@@ -20,11 +20,11 @@ h1,h2,h3,span{
 }
 
 body{
-font-family: "Baloo Thambi 2", cursive;
+  font-family: "Baloo Thambi 2";
 background: #F5EAE6;
 font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+font-style: normal;
+font-display: swap;
 }
 
 p{
