@@ -25,7 +25,7 @@ const SFunerario = ({ sFunerario }) => {
   }, [])
 
   return (
-    <div css={sFunerario ? tw`block` : tw`hidden`}>
+    <div>
       <S.SFunerario>
         <S.SFContent>
           <OptimizedImg

@@ -36,10 +36,14 @@ export const SServicios = () => {
     <S.Servicios id="servicios">
       <S.Container ref={myRef}>
         {/* Componentes de Servicios que cambiaran dinamicamente */}
-        <SFunerario sFunerario={servicios.sFunerario} />
+        {servicios.sFunerario && <SFunerario />}
+        {servicios.sSepultura && <SSepultura />}
+        {servicios.sNichos && <SNichos />}
+        {servicios.sSepelios && <SSepelios />}
+        {/* <SFunerario sFunerario={servicios.sFunerario} />
         <SSepultura sSepultura={servicios.sSepultura} />
         <SNichos sNichos={servicios.sNichos} />
-        <SSepelios sSepelios={servicios.sSepelios} />
+        <SSepelios sSepelios={servicios.sSepelios} /> */}
 
         <S.ObContent>
           <C.Button href="#contacto" css={tw`mx-auto block`}>

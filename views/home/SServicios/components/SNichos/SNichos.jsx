@@ -30,7 +30,7 @@ const SNichos = ({ sNichos }) => {
   }, [])
 
   return (
-    <S.SNichos css={sNichos ? tw`block` : tw`hidden`}>
+    <S.SNichos>
       <S.SNichosDec />
       <S.SNContent>
         <OptimizedImg

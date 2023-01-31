@@ -8,7 +8,7 @@ import { OptimizedImg } from '../../../../../components/ui'
 const SSepelios = ({ sSepelios }) => {
   const { seo } = useStateSeoContext()
   return (
-    <div css={sSepelios ? tw`block` : tw`hidden`}>
+    <div>
       <S.SSEContent>
         <OptimizedImg
           stylesTw={tw`object-contain w-12`}

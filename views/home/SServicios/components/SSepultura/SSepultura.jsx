@@ -31,7 +31,7 @@ const SSepultura = ({ sSepultura }) => {
     setActivo({ personal: true })
   }, [])
   return (
-    <div css={sSepultura ? tw`block` : tw`hidden`}>
+    <div>
       <S.SSHeading>
         <OptimizedImg
           stylesTw={tw`object-contain w-12`}
