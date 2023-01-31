@@ -16,7 +16,7 @@ import { serviciosNichos } from './attributes'
 //Optimizador de imagenes
 import { OptimizedImg } from '../../../../../components/ui'
 
-export const SNichos = ({ sNichos }) => {
+const SNichos = ({ sNichos }) => {
   const { seo } = useStateSeoContext()
 
   //Utilizando mi hook
@@ -147,3 +147,4 @@ export const SNichos = ({ sNichos }) => {
     </S.SNichos>
   )
 }
+export default SNichos

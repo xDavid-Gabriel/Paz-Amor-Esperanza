@@ -5,7 +5,7 @@ import { useStateSeoContext } from '../../../../../context/seo'
 //Optimizador de imagenes
 import { OptimizedImg } from '../../../../../components/ui'
 
-export const SSepelios = ({ sSepelios }) => {
+const SSepelios = ({ sSepelios }) => {
   const { seo } = useStateSeoContext()
   return (
     <div css={sSepelios ? tw`block` : tw`hidden`}>
@@ -129,3 +129,5 @@ export const SSepelios = ({ sSepelios }) => {
     </div>
   )
 }
+
+export default SSepelios

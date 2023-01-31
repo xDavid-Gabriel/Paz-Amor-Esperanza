@@ -11,7 +11,7 @@ import tw from 'twin.macro'
 //Optimizador de imagenes
 import { OptimizedImg } from '../../../../../components/ui'
 
-export const SSepultura = ({ sSepultura }) => {
+const SSepultura = ({ sSepultura }) => {
   const { seo } = useStateSeoContext()
 
   //Utilizando mi hook
@@ -159,3 +159,5 @@ export const SSepultura = ({ sSepultura }) => {
     </div>
   )
 }
+
+export default SSepultura

@@ -7,7 +7,14 @@ import { useState, useRef } from 'react'
 import { OptimizedImg } from '../../../components/ui'
 
 //Componente solamente de la sección
-import { SFunerario, SSepultura, SNichos, SSepelios } from './components'
+//import { SFunerario, SSepultura, SNichos, SSepelios } from './components'
+
+import dynamic from 'next/dynamic'
+
+const SFunerario = dynamic(() => import('./components/SFunerario/SFunerario'))
+const SSepultura = dynamic(() => import('./components/SSepultura/SSepultura'))
+const SNichos = dynamic(() => import('./components/SNichos/SNichos'))
+const SSepelios = dynamic(() => import('./components/SSepelios/SSepelios'))
 
 export const SServicios = () => {
   const { seo } = useStateSeoContext()

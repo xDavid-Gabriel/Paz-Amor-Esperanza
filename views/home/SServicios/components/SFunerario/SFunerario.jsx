@@ -11,7 +11,7 @@ import { serviciosFunerario } from './attributes'
 //Optimizador de imagenes
 import { OptimizedImg } from '../../../../../components/ui'
 
-export const SFunerario = ({ sFunerario }) => {
+const SFunerario = ({ sFunerario }) => {
   const { seo } = useStateSeoContext()
   //Utilizando mi hook
   const { items, activo, setActivo, filterItem } = useFilter(
@@ -156,3 +156,5 @@ export const SFunerario = ({ sFunerario }) => {
     </div>
   )
 }
+
+export default SFunerario
