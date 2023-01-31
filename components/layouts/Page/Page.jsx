@@ -13,6 +13,7 @@ export const Page = ({ children, title }) => {
   return (
     <>
       <Head>
+        <title>{title}</title>
         {seo ? (
           <meta name="description" content="Hola es la descripcion" />
         ) : (
@@ -24,8 +25,6 @@ export const Page = ({ children, title }) => {
           type="image/x-icon"
         />
         <link rel="apple-touch-icon" href="/images/favicon.ico" />
-
-        <title>{title}</title>
       </Head>
       <C.Header />
       <main>{children}</main>

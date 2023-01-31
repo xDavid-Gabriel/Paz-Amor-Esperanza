@@ -21,17 +21,6 @@ export default class MyDocument extends Document {
         styles: (
           <>
             <Html lang="es">
-              <link
-                href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500;600;700;800&display=swap"
-                rel="stylesheet"
-                crossOrigin="anonymous"
-              />
-              <link
-                href="https://fonts.cdnfonts.com/css/romanus"
-                rel="stylesheet"
-                crossOrigin="anonymous"
-              />
-
               {initialProps.styles}
               {sheet.getStyleElement()}
             </Html>

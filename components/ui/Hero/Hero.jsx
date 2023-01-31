@@ -13,7 +13,7 @@ export const Hero = () => {
   return (
     <section
       id="inicio"
-      tw="bg-[url(/images/hojas-fondo.webp)] mt-12 md:mt-[4rem] pb-20 md:pb-28 bg-cover flex items-center [background-position: 0 18%] relative z-[-1]"
+      tw="bg-[url(https://assets.pazamoryesperanza.com/hojas-fondo.webp)] mt-12 md:mt-[4rem] pb-20 md:pb-28 bg-cover flex items-center [background-position: 0 18%] relative z-[-1]"
     >
       <div tw="container">
         <div tw="border-primary-800 border-[2px] rounded-[40px] py-[6.5rem] flex flex-col gap-[4.5rem] items-center justify-center relative before:absolute before:w-[7rem] sm:before:w-[10rem] lg:before:w-[15rem] before:h-[2px] before:bg-primary-100 before:top-[-2px]">

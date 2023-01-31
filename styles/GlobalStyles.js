@@ -2,18 +2,29 @@ import { createGlobalStyle } from 'styled-components'
 import tw, { theme, GlobalStyles as BaseStyles } from 'twin.macro'
 
 const CustomStyles = createGlobalStyle`
+@font-face {
+  font-family: "ROMANUS" ;
+  src: url('/fonts/ROMANUS.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Baloo Thambi 2" cursive;
+  src: url('/fonts/BalooThami2/Baloo-Thambi-2-Regular.woff') format('woff');
+}
 h1,h2,h3,span{
-font-family: "ROMANUS";
-letter-spacing: 1.3px;
-font-display: swap;
-src:local('ROMANUS'),url(https://fonts.cdnfonts.com/s/50292/ROMANUS.woff) format('woff')
+  font-family: "ROMANUS" ;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 body{
 font-family: "Baloo Thambi 2", cursive;
 background: #F5EAE6;
-font-display: swap;
-
+font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 p{
