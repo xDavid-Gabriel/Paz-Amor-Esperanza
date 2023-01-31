@@ -23,7 +23,9 @@ const withTwin = require('./withTwin.js')
 
 module.exports = withTwin({
   reactStrictMode: true,
-
+  images: {
+    domains: ['assets.pazamoryesperanza.com'],
+  },
   // ...
 
   // withBundleAnalyzer,

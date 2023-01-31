@@ -11,7 +11,6 @@ import { OptimizedImg } from '../'
 export const Hero = () => {
   const { seo } = useStateSeoContext()
   return (
-    // md:min-h-[calc(100vh - 155.55px)]
     <section
       id="inicio"
       tw="bg-[url(/images/hojas-fondo.webp)] mt-12 md:mt-[4rem] pb-20 md:pb-28 bg-cover flex items-center [background-position: 0 18%] relative z-[-1]"

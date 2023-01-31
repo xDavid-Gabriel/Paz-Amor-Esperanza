@@ -4,7 +4,9 @@ import GlobalStyles from './../styles/GlobalStyles'
 const App = ({ Component, pageProps }) => (
   <SEOProvider>
     <GlobalStyles />
-    <Component {...pageProps} />
+   
+      <Component {...pageProps} />
+   
   </SEOProvider>
 )
 

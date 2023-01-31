@@ -2,6 +2,7 @@
 // on load. Without it, the styles are only added once
 // react loads on the frontend
 import Document, { Html } from 'next/document'
+
 import { ServerStyleSheet } from 'styled-components'
 
 export default class MyDocument extends Document {
@@ -30,6 +31,7 @@ export default class MyDocument extends Document {
                 rel="stylesheet"
                 crossOrigin="anonymous"
               />
+
               {initialProps.styles}
               {sheet.getStyleElement()}
             </Html>

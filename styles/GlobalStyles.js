@@ -13,8 +13,7 @@ body{
 font-family: "Baloo Thambi 2", cursive;
 background: #F5EAE6;
 font-display: swap;
-src: url(https://fonts.gstatic.com/s/baloothambi2/v16/cY9cfjeOW0NHpmOQXranrbDyu7hPDpKBZQ.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+
 }
 
 p{
