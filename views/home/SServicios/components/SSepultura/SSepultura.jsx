@@ -4,14 +4,14 @@ import { useStateSeoContext } from '../../../../../context/seo'
 //Hooks
 import { useFilter } from '../../../../../hooks/useFilter'
 //Data statica
-import { serviciosSepultura } from './attributes'
+//import { serviciosSepultura } from './attributes'
 //Estilos
 import * as S from './SSepultura.styles'
 import tw from 'twin.macro'
 //Optimizador de imagenes
 import { OptimizedImg } from '../../../../../components/ui'
 
-const SSepultura = ({ sSepultura }) => {
+const SSepultura = ({ serviciosSepultura }) => {
   const { seo } = useStateSeoContext()
 
   //Utilizando mi hook

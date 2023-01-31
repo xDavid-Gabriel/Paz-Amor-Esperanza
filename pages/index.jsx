@@ -1,12 +1,13 @@
 import { Page } from '../components/layouts'
 import * as C from '../components/ui'
 import * as P from '../views/home'
+import { servicios } from '../data'
 
-const Home = () => {
+const Home = ({ data }) => {
   return (
     <Page title="Paz, Amor y Esperanza">
       <C.Hero />
-      <P.SServicios />
+      <P.SServicios servicios={data} />
       <P.SCampoSanto />
       <P.SContacto />
     </Page>
@@ -14,3 +15,13 @@ const Home = () => {
 }
 
 export default Home
+
+export const getStaticProps = async ctx => {
+  const data = servicios
+
+  return {
+    props: {
+      data,
+    },
+  }
+}

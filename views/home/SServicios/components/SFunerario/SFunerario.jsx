@@ -6,12 +6,12 @@ import { useStateSeoContext } from '../../../../../context/seo'
 //Hooks
 import { useFilter } from '../../../../../hooks/useFilter'
 //Data static
-import { serviciosFunerario } from './attributes'
+//import { serviciosFunerario } from './attributes'
 
 //Optimizador de imagenes
 import { OptimizedImg } from '../../../../../components/ui'
 
-const SFunerario = () => {
+const SFunerario = ({ serviciosFunerario }) => {
   const { seo } = useStateSeoContext()
   //Utilizando mi hook
   const { items, activo, setActivo, filterItem } = useFilter(

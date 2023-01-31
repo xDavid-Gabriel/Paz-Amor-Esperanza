@@ -11,12 +11,12 @@ import * as S from './SNichos.styles'
 import tw from 'twin.macro'
 //Hooks
 import { useFilter } from '../../../../../hooks/useFilter'
-import { serviciosNichos } from './attributes'
+//import { serviciosNichos } from './attributes'
 
 //Optimizador de imagenes
 import { OptimizedImg } from '../../../../../components/ui'
 
-const SNichos = () => {
+const SNichos = ({ serviciosNichos }) => {
   const { seo } = useStateSeoContext()
 
   //Utilizando mi hook

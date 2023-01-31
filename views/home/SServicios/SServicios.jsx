@@ -16,10 +16,10 @@ const SSepultura = dynamic(() => import('./components/SSepultura/SSepultura'))
 const SNichos = dynamic(() => import('./components/SNichos/SNichos'))
 const SSepelios = dynamic(() => import('./components/SSepelios/SSepelios'))
 
-export const SServicios = () => {
+export const SServicios = ({ servicios }) => {
   const { seo } = useStateSeoContext()
 
-  const [servicios, setServicios] = useState({
+  const [serviciosPaz, setServiciosPaz] = useState({
     sFunerario: true,
     sSepultura: false,
     sNichos: false,
@@ -36,10 +36,16 @@ export const SServicios = () => {
     <S.Servicios id="servicios">
       <S.Container ref={myRef}>
         {/* Componentes de Servicios que cambiaran dinamicamente */}
-        {servicios.sFunerario && <SFunerario />}
-        {servicios.sSepultura && <SSepultura />}
-        {servicios.sNichos && <SNichos />}
-        {servicios.sSepelios && <SSepelios />}
+        {serviciosPaz.sFunerario && (
+          <SFunerario serviciosFunerario={servicios.serviciosFunerario} />
+        )}
+        {serviciosPaz.sSepultura && (
+          <SSepultura serviciosSepultura={servicios.serviciosSepultura} />
+        )}
+        {serviciosPaz.sNichos && (
+          <SNichos serviciosNichos={servicios.serviciosNichos} />
+        )}
+        {serviciosPaz.sSepelios && <SSepelios />}
         {/* <SFunerario sFunerario={servicios.sFunerario} />
         <SSepultura sSepultura={servicios.sSepultura} />
         <SNichos sNichos={servicios.sNichos} />
@@ -72,7 +78,7 @@ export const SServicios = () => {
               <C.Button
                 onClick={() => {
                   handleClick()
-                  setServicios({ sSepultura: true })
+                  setServiciosPaz({ sSepultura: true })
                 }}
                 as="button"
                 variant="outline"
@@ -99,7 +105,7 @@ export const SServicios = () => {
                 as="button"
                 onClick={() => {
                   handleClick()
-                  setServicios({ sNichos: true })
+                  setServiciosPaz({ sNichos: true })
                 }}
               >
                 Ver mas
@@ -122,7 +128,7 @@ export const SServicios = () => {
               <C.Button
                 onClick={() => {
                   handleClick()
-                  setServicios({ sFunerario: true })
+                  setServiciosPaz({ sFunerario: true })
                 }}
                 variant="outline"
                 as="button"
@@ -145,7 +151,7 @@ export const SServicios = () => {
                 as="button"
                 onClick={() => {
                   handleClick()
-                  setServicios({ sSepelios: true })
+                  setServiciosPaz({ sSepelios: true })
                 }}
               >
                 Ver mas
