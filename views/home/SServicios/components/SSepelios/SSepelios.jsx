@@ -12,15 +12,17 @@ const SSepelios = () => {
   return (
     <div>
       <S.SSEContent>
-        <OptimizedImg
-          stylesTw={tw`object-contain w-12`}
-          src="ataud.svg"
+        <img
+          css={tw`object-contain w-12`}
+          src="https://assets.pazamoryesperanza.com/ataud.svg"
           alt="Flor"
+          loading="lazy"
         />
-        <OptimizedImg
-          stylesTw={tw`object-contain w-12`}
-          src="flor-marron.svg"
+        <img
+          css={tw`object-contain w-12`}
+          src="https://assets.pazamoryesperanza.com/flor-marron.svg"
           alt="Flor"
+          loading="lazy"
         />
 
         <C.H2 as={seo ? 'h2' : 'span'}>

@@ -39,15 +39,17 @@ const SNichos = ({ serviciosNichos }) => {
     <S.SNichos>
       <S.SNichosDec />
       <S.SNContent>
-        <OptimizedImg
-          stylesTw={tw`object-contain w-12`}
-          src="tres-cruces.svg"
+        <img
+          css={tw`object-contain w-12`}
+          src="https://assets.pazamoryesperanza.com/tres-cruces.svg"
           alt="Flor"
+          loading="lazy"
         />
-        <OptimizedImg
-          stylesTw={tw`object-contain w-12`}
-          src="flor-marron.svg"
+        <img
+          css={tw`object-contain w-12`}
+          src="https://assets.pazamoryesperanza.com/flor-marron.svg"
           alt="Flor Marron"
+          loading="lazy"
         />
 
         <C.H2 as={seo ? 'h2' : 'span'}>

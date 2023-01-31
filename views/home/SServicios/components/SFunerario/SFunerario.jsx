@@ -34,15 +34,17 @@ const SFunerario = ({ serviciosFunerario }) => {
     <div>
       <S.SFunerario>
         <S.SFContent>
-          <OptimizedImg
-            stylesTw={tw`object-contain w-12`}
-            src="flor-outline.svg"
+          <img
+            css={tw`object-contain w-12`}
+            src="https://assets.pazamoryesperanza.com/flor-outline.svg"
             alt="Flor"
+            loading="lazy"
           />
-          <OptimizedImg
-            stylesTw={tw`object-contain w-12`}
-            src="flor-marron.svg"
+          <img
+            css={tw`object-contain w-12`}
+            src="https://assets.pazamoryesperanza.com/flor-marron.svg"
             alt="Flor"
+            loading="lazy"
           />
 
           <C.H2 as={seo ? 'h2' : 'span'}>

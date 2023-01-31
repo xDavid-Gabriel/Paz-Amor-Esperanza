@@ -38,15 +38,17 @@ const SSepultura = ({ serviciosSepultura }) => {
   return (
     <div>
       <S.SSHeading>
-        <OptimizedImg
-          stylesTw={tw`object-contain w-12`}
-          src="cruz.svg"
+        <img
+          css={tw`object-contain w-12`}
+          src="https://assets.pazamoryesperanza.com/cruz.svg"
           alt="Flor"
+          loading="lazy"
         />
-        <OptimizedImg
-          stylesTw={tw`object-contain w-12`}
-          src="flor-marron.svg"
+        <img
+          css={tw`object-contain w-12`}
+          src="https://assets.pazamoryesperanza.com/flor-marron.svg"
           alt="Flor"
+          loading="lazy"
         />
 
         <C.H2 as={seo ? 'h2' : 'span'}>
