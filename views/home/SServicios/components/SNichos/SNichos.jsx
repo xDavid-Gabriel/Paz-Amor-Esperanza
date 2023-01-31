@@ -1,4 +1,4 @@
-import { memo, useEffect } from 'react'
+import { memo, useEffect, useMemo } from 'react'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css/pagination'
@@ -16,7 +16,7 @@ import { serviciosNichos } from './attributes'
 //Optimizador de imagenes
 import { OptimizedImg } from '../../../../../components/ui'
 
-const SNichos = ({ sNichos }) => {
+const SNichos = () => {
   const { seo } = useStateSeoContext()
 
   //Utilizando mi hook
@@ -24,6 +24,12 @@ const SNichos = ({ sNichos }) => {
     lurin: false,
     ptePiedra: false,
   })
+
+  const memoizedData = useMemo(() => {
+    // Aquí iría el cálculo costoso que se quiere memoizar
+    return items
+  }, [items])
+
   useEffect(() => {
     filterItem('lurin')
     setActivo({ lurin: true })
@@ -52,7 +58,7 @@ const SNichos = ({ sNichos }) => {
         </S.SNDes>
       </S.SNContent>
       <S.SNContentInfo>
-        {items.map(nichos => (
+        {memoizedData.map(nichos => (
           <div key={nichos.id} tw="contents">
             <S.SNNumber>
               03.

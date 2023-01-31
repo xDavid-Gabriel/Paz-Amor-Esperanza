@@ -1,4 +1,4 @@
-import { memo, useEffect } from 'react'
+import { memo, useEffect, useMemo } from 'react'
 import * as C from '../../../../../components/ui'
 import { useStateSeoContext } from '../../../../../context/seo'
 //Hooks
@@ -25,6 +25,11 @@ const SSepultura = ({ sSepultura }) => {
       compartida: false,
     },
   )
+
+  const memoizedData = useMemo(() => {
+    // Aquí iría el cálculo costoso que se quiere memoizar
+    return items
+  }, [items])
   //Cundo el componente se renderiza cargara por defecto la categoria "personal" y su boton estara activo
   useEffect(() => {
     filterItem('personal')
@@ -116,7 +121,7 @@ const SSepultura = ({ sSepultura }) => {
           </C.Button>
         </S.SSPlanesBtns>
         <S.SSContent>
-          {items.map(sepultura => (
+          {memoizedData.map(sepultura => (
             <S.SSContentInfo key={sepultura.id}>
               <S.SSFigure>
                 <OptimizedImg

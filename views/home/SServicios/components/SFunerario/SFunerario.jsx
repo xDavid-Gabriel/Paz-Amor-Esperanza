@@ -1,4 +1,4 @@
-import { memo, useEffect } from 'react'
+import { memo, useEffect, useMemo } from 'react'
 import * as C from '../../../../../components/ui'
 import * as S from './SFunerario.styles'
 import tw from 'twin.macro'
@@ -11,13 +11,19 @@ import { serviciosFunerario } from './attributes'
 //Optimizador de imagenes
 import { OptimizedImg } from '../../../../../components/ui'
 
-const SFunerario = ({ sFunerario }) => {
+const SFunerario = () => {
   const { seo } = useStateSeoContext()
   //Utilizando mi hook
   const { items, activo, setActivo, filterItem } = useFilter(
     serviciosFunerario,
     { planA: false, planB: false, planC: false, planD: false },
   )
+
+  const memoizedData = useMemo(() => {
+    // Aquí iría el cálculo costoso que se quiere memoizar
+    return items
+  }, [items])
+
   //Cundo el componente se renderiza cargara por defecto la categoria "planA" y su boton estara activo
   useEffect(() => {
     filterItem('planA')
@@ -101,7 +107,7 @@ const SFunerario = ({ sFunerario }) => {
             </C.Button>
           </S.SFPlanesBtns>
           <S.SFContentInfo>
-            {items.map(plan => (
+            {memoizedData.map(plan => (
               <div tw="contents" key={plan.id}>
                 <S.SFFigure>
                   <OptimizedImg

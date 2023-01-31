@@ -6,8 +6,9 @@ import { useStateSeoContext } from '../../../../../context/seo'
 //Optimizador de imagenes
 import { OptimizedImg } from '../../../../../components/ui'
 
-const SSepelios = ({ sSepelios }) => {
+const SSepelios = () => {
   const { seo } = useStateSeoContext()
+
   return (
     <div>
       <S.SSEContent>
