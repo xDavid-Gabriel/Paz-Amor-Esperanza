@@ -24,6 +24,7 @@ export const Page = ({ children, title }) => {
           type="image/x-icon"
         />
         <link rel="apple-touch-icon" href="/images/favicon.ico" />
+
         <title>{title}</title>
       </Head>
       <C.Header />

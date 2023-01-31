@@ -41,7 +41,7 @@ const SNichos = ({ sNichos }) => {
         <OptimizedImg
           stylesTw={tw`object-contain w-12`}
           src="flor-marron.svg"
-          alt="Flor"
+          alt="Flor Marron"
         />
 
         <C.H2 as={seo ? 'h2' : 'span'}>

@@ -7,9 +7,9 @@ export const OptimizedImg = ({ src, alt, stylesTw }) => {
   return (
     <Imgix
       css={stylesTw}
+      className="lazyload"
       width={500}
       height={500}
-      className="lazyload"
       src={`https://assets.pazamoryesperanza.com/${src}`}
       alt={alt}
       imgixParams={{ auto: 'compress,format' }}
