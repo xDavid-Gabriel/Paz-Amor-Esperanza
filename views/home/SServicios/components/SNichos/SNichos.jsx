@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { memo, useEffect } from 'react'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css/pagination'
@@ -147,4 +147,4 @@ const SNichos = ({ sNichos }) => {
     </S.SNichos>
   )
 }
-export default SNichos
+export default memo(SNichos)

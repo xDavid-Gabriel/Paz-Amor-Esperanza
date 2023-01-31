@@ -1,3 +1,4 @@
+import { memo } from 'react'
 import * as C from '../../../../../components/ui'
 import * as S from './SSepelios.styles'
 import tw from 'twin.macro'
@@ -130,4 +131,4 @@ const SSepelios = ({ sSepelios }) => {
   )
 }
 
-export default SSepelios
+export default memo(SSepelios)

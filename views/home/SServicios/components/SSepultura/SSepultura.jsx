@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { memo, useEffect } from 'react'
 import * as C from '../../../../../components/ui'
 import { useStateSeoContext } from '../../../../../context/seo'
 //Hooks
@@ -160,4 +160,4 @@ const SSepultura = ({ sSepultura }) => {
   )
 }
 
-export default SSepultura
+export default memo(SSepultura)

@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { memo, useEffect } from 'react'
 import * as C from '../../../../../components/ui'
 import * as S from './SFunerario.styles'
 import tw from 'twin.macro'
@@ -157,4 +157,4 @@ const SFunerario = ({ sFunerario }) => {
   )
 }
 
-export default SFunerario
+export default memo(SFunerario)
